@@ -1,36 +1,203 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="CoreHRX Pvt Ltd — Payroll, HRMS, CRM and Recruitment as a Service for Indian businesses" />
-  <title>CoreHRX Pvt Ltd — HR · Payroll · Recruitment</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreHRX Pvt Ltd – HR Consultancy & Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
 
-  <!-- Tailwind CDN (no build required) -->
-  <script src="https://cdn.tailwindcss.com"></script>
+        header {
+            background: #1A73E8;
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+        }
 
-  <!-- Google font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 700;
+        }
 
-  <style>
-    :root{
-      --brand:#0f766e; /* teal */
-      --accent:#06b6d4; /* cyan */
-    }
-    body { font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
-    .glass { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); backdrop-filter: blur(6px); }
-    .btn-primary{ background: linear-gradient(90deg,var(--brand), var(--accent)); color: white; }
-  </style>
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .pricing-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.12);
+        }
+
+        .price {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A73E8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #1A73E8;
+            color: white;
+            border-radius: 8px;
+            margin-top: 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .partners img {
+            width: 150px;
+            margin: 20px;
+            filter: grayscale(100%);
+        }
+    </style>
 </head>
-<body class="antialiased text-slate-800 bg-slate-50">
 
-  <!-- NAV -->
-  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-6 lg:px-8">
-      <nav class="flex items-center justify-between h-16">
-        <a href="#" class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-to-br from-teal-600 to-cyan-400 text-white font-bold">C</div>
-          <div>
-            <div class="text-lg font-semibold">CoreHRX Pvt Ltd</div>
-            <div class="text-xs text-slate-500 -mt-0.5">Payroll • HRMS • Recruitmen
+<body>
+
+<header>
+    <h1>CoreHRX Pvt Ltd</h1>
+    <p>HR Consultancy • Payroll • HRMS • CRM • Recruitment Solutions for Businesses Across India</p>
+</header>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width:900px; margin:auto;">
+        CoreHRX Pvt Ltd provides complete HR solutions including Payroll automation,
+        HRMS software, CRM solutions, and professional hiring services for agencies and organisations.
+        Our goal is to empower businesses with simple, reliable, and affordable HR technology.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Consultancy Services</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>HR Consultancy</h3>
+            <p>Full HR setup, policy creation, compliance and workforce management.</p>
+        </div>
+
+        <div class="card">
+            <h3>Payroll Management</h3>
+            <p>Automated salary processing, PF/ESI, payslips, attendance & leave tracking.</p>
+        </div>
+
+        <div class="card">
+            <h3>Recruitment Solutions</h3>
+            <p>Candidate sourcing, screening and complete hiring support for agencies.</p>
+        </div>
+
+        <div class="card">
+            <h3>HRMS + CRM Platform</h3>
+            <p>All-in-one cloud software to manage employees, clients & operations.</p>
+        </div>
+    </div>
+</section>
+
+<section id="benefits">
+    <h2>Why Choose CoreHRX?</h2>
+    <div class="cards">
+        <div class="card"><h3>✔ 24/7 Support</h3><p>We are always available for our clients.</p></div>
+        <div class="card"><h3>✔ Affordable Pricing</h3><p>Budget-friendly plans for startups & MSMEs.</p></div>
+        <div class="card"><h3>✔ Powerful Technology</h3><p>Fast, secure, cloud-based software.</p></div>
+        <div class="card"><h3>✔ Expert Team</h3><p>Professional HR consultants with industry experience.</p></div>
+    </div>
+</section>
+
+<section id="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="cards">
+
+        <div class="pricing-box">
+            <h3>Starter Plan</h3>
+            <p class="price">₹1,999 / month</p>
+            <p>Small business HR + Payroll</p>
+            <a class="btn" href="#">Get Started</a>
+        </div>
+
+        <div class="pricing-box">
+            <h3>Business Plan</h3>
+            <p class="price">₹4,999 / month</p>
+            <p>HRMS + CRM + Automation</p>
+            <a class="btn" href="#">Get Started</a>
+        </div>
+
+        <div class="pricing-box">
+            <h3>Enterprise Plan</h3>
+            <p class="price">₹9,999 / month</p>
+            <p>Full Consultancy + Premium Support</p>
+            <a class="btn" href="#">Contact Us</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="partners">
+    <h2>Collaboration Partners</h2>
+    <div class="partners" style="text-align:center;">
+        <img src="https://dummyimage.com/150x60/ccc/000&text=Partner+1">
+        <img src="https://dummyimage.com/150x60/ccc/000&text=Partner+2">
+        <img src="https://dummyimage.com/150x60/ccc/000&text=Partner+3">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center; font-size:18px;">
+        📧 support@corehrx.com<br>
+        📞 +91 9876543210<br>
+        🌐 corehrx.com
+    </p>
+</section>
+
+<footer>
+    © 2025 CoreHRX Pvt Ltd — All Rights Reserved.
+</footer>
+
+</body>
+</html>
