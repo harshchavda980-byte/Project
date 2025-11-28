@@ -94,7 +94,7 @@
             margin: 20px;
             filter: grayscale(100%);
         }
-        /* Header styling */
+/* HEADER */
 header {
     background: #1A73E8;
     padding: 40px 20px;
@@ -102,7 +102,7 @@ header {
     text-align: center;
 }
 
-/* Center logo */
+/* CENTER LOGO */
 .logo-container {
     display: flex;
     justify-content: center;
@@ -110,7 +110,7 @@ header {
     margin-bottom: 15px;
 }
 
-/* Round logo style */
+/* ROUND LOGO */
 .round-logo {
     width: 120px;
     height: 120px;
@@ -118,29 +118,56 @@ header {
     border-radius: 50%;
     border: 4px solid white;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
-/* Fade-in animation */
-.fade-in-logo {
+/* ANIMATED LOGO (fade-in + floating) */
+.animated-logo {
     opacity: 0;
-    animation: fadeInScale 1.4s ease-out forwards;
+    animation: fadeIn 1.5s ease-out forwards, floatUpDown 4s ease-in-out infinite;
 }
 
-/* Animation keyframes */
-@keyframes fadeInScale {
-    0% {
-        opacity: 0;
-        transform: scale(0.7);
-    }
-    60% {
-        opacity: 1;
-        transform: scale(1.08);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+/* GLOW ON HOVER */
+.animated-logo:hover {
+    box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
+    transition: 0.4s ease;
 }
+
+/* FADE-IN KEYFRAME */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.7); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* SMOOTH FLOATING ANIMATION */
+@keyframes floatUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* HEADING FADE-IN */
+.fade-heading {
+    opacity: 0;
+    animation: fadeInHeading 1.8s ease forwards;
+}
+
+@keyframes fadeInHeading {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* SLIDE-DOWN TEXT */
+.slide-text {
+    opacity: 0;
+    animation: slideDownText 2s ease forwards;
+}
+
+@keyframes slideDownText {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
     </style>
 </head>
 
@@ -148,11 +175,11 @@ header {
 
 <header>
       <div class="logo-container">
-        <img src="logo.png" alt="Company Logo" class="round-logo fade-in-logo">
+        <img src="logo.png" alt="Company Logo" class="round-logo animated-logo">
     </div>
-    <h1>HR solutions Pvt Ltd</h1>
-      <p>Stands For HR!</p>
-    <p>HR Consultancy • Payroll • HRMS • CRM • Recruitment Solutions for Businesses Across India</p>
+    <h1 class="fade-heading">HR Solutions Pvt Ltd</h1>
+       <p class="slide-text">Stands For HR!</p>
+     <p class="slide-text">HR Consultancy • Payroll • HRMS • CRM • Recruitment Solutions for Businesses Across India</p>
 </header>
 
 <section id="about">
