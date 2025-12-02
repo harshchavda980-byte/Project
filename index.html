@@ -1,170 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mine HR Solutions Private Limited</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        /* GLOBAL */
-        body {
-            margin: 0;
-            font-family: "Poppins", sans-serif;
-            background: #E3ECF7;
-            color: #1D3C70;
-            overflow-x: hidden;
-        }
-
-        /* NAVBAR */
-        .navbar {
-            width: 100%;
-            padding: 20px 50px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 999;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-
-        .navbar img {
-            height: 65px;
-            width: auto;
-            animation: logoFloat 3s ease-in-out infinite;
-        }
-
-        /* LOGO floating animation */
-        @keyframes logoFloat {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
-            100% { transform: translateY(0); }
-        }
-
-        /* HERO SECTION */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            padding: 0 20px;
-            margin-top: 90px;
-        }
-
-        .hero h1 {
-            font-size: 3.2rem;
-            font-weight: 700;
-            animation: fadeIn 1.2s ease forwards;
-            opacity: 0;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-top: 15px;
-            max-width: 650px;
-            line-height: 1.6;
-            animation: slideDown 1.4s ease forwards;
-            opacity: 0;
-        }
-
-        /* BUTTON */
-        .btn-primary {
-            margin-top: 30px;
-            padding: 14px 32px;
-            background: #1D3C70;
-            color: #fff;
-            border: none;
-            border-radius: 50px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .btn-primary:hover {
-            background: #28C6F5;
-            color: #1D3C70;
-            box-shadow: 0 0 15px rgba(40,198,245,0.6);
-        }
-
-        /* FEATURES GRID */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 30px;
-            padding: 60px 50px;
-        }
-
-        .feature-box {
-            background: #fff;
-            border-radius: 20px;
-            padding: 25px;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-            transition: 0.4s;
-        }
-
-        .feature-box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(29,60,112,0.25);
-        }
-
-        /* ANIMATIONS */
-        @keyframes fadeIn {
-            to { opacity: 1; }
-        }
-
-        @keyframes slideDown {
-            from { transform: translateY(-20px); }
-            to { transform: translateY(0); opacity: 1; }
-        }
-    </style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Mine HR Solutions Pvt. Ltd. — HR • Payroll • Hiring</title>
+  <meta name="description" content="Mine HR Solutions Pvt. Ltd. — Recruitment, Payroll, HR Outsourcing and Compliance for Indian businesses."/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
 
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <img src="logo.png" alt="Mine HR Logo">
+<!-- HEADER -->
+<header class="site-header" role="banner">
+  <div class="header-inner container">
+    <a class="brand" href="index.html">
+      <img src="assets/images/Logo.jpg" alt="Mine HR Solutions Logo">
+      <div>
+        <h1>Mine HR Solutions Pvt. Ltd.</h1>
+        <p>People-first HR made simple</p>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html" class="btn btn-ghost">Contact</a>
+      <a href="https://formsubmit.co/info@corehrx.in" class="btn btn-primary" target="_blank" rel="noopener">Request Demo</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="kicker">Trusted HR partner</span>
+      <h2 class="h-title">Simplify HR, payroll and hiring — all under one roof</h2>
+      <p class="h-sub">Mine HR Solutions helps small-to-medium businesses with recruitment, payroll automation, statutory compliance and HR outsourcing. Faster onboarding, accurate payroll, and happy employees.</p>
+
+      <div style="display:flex;gap:12px;align-items:center">
+        <a href="services.html" class="btn btn-primary">Explore Services</a>
+        <a href="contact.html" class="btn btn-ghost">Talk to sales</a>
+      </div>
+
+      <div class="mt-8">
+        <div style="display:flex;gap:18px;flex-wrap:wrap">
+          <div style="display:flex;align-items:center;gap:10px">
+            <strong style="font-size:20px;color:var(--brand-dark)">98%</strong>
+            <div style="color:var(--muted)">Customer satisfaction</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px">
+            <strong style="font-size:20px;color:var(--brand-dark)">20+</strong>
+            <div style="color:var(--muted)">Clients served</div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Mine HR Solutions Pvt. Ltd.</h1>
-        <p>Your trusted partner for professional HR services, recruitment assistance, payroll support, and complete business growth solutions.</p>
+    <aside class="hero-card demo-cta">
+      <h4>Request a quick demo</h4>
+      <p style="color:var(--muted)">20-minute walkthrough tailored to your payroll stack.</p>
+      <form class="form-row" action="https://formsubmit.co/info@corehrx.in" method="POST">
+        <input type="hidden" name="_subject" value="Mine HR Demo Request">
+        <input class="input" name="Name" placeholder="Full name" required>
+        <input class="input" name="Email" type="email" placeholder="Email address" required>
+        <input class="input" name="Company" placeholder="Company (optional)">
+        <textarea name="Message" placeholder="Team size / Notes (optional)"></textarea>
+        <button class="btn btn-primary" type="submit">Request Demo</button>
+      </form>
+    </aside>
+  </div>
+</section>
 
-        <button class="btn-primary">Explore Services</button>
-    </section>
+<!-- FEATURES -->
+<section class="section container">
+  <div class="center">
+    <h3 style="margin:0;font-size:22px">What we do</h3>
+    <p style="color:var(--muted);max-width:720px;margin:10px auto 0">End-to-end HR services that adapt to your business — from hiring to payroll and compliance.</p>
+  </div>
 
-    <!-- FEATURES -->
-    <section class="features">
-        <div class="feature-box">
-            <h3>Recruitment Services</h3>
-            <p>Find the perfect candidates for your company with our expert hiring solutions.</p>
-        </div>
+  <div class="cards mt-8">
+    <div class="feature-box">
+      <h4>Recruitment & Staffing</h4>
+      <p style="color:var(--muted)">Shortlisting, interviews, offer management and onboarding support.</p>
+    </div>
 
-        <div class="feature-box">
-            <h3>Payroll Management</h3>
-            <p>Reliable payroll solutions tailored for all business sizes.</p>
-        </div>
+    <div class="feature-box">
+      <h4>Payroll & Statutory Compliance</h4>
+      <p style="color:var(--muted)">Accurate payroll processing with PF, ESI, TDS management and payslips.</p>
+    </div>
 
-        <div class="feature-box">
-            <h3>HR Outsourcing</h3>
-            <p>Full HR operations handled by our experienced professionals.</p>
-        </div>
+    <div class="feature-box">
+      <h4>HR Outsourcing</h4>
+      <p style="color:var(--muted)">Complete HR operations handled remotely by our experts.</p>
+    </div>
 
-        <div class="feature-box">
-            <h3>Business Solutions</h3>
-            <p>Consulting & strategic support to grow your business faster.</p>
-        </div>
-    </section>
+    <div class="feature-box">
+      <h4>Consulting & Policies</h4>
+      <p style="color:var(--muted)">Employee handbooks, HR policies, and process documentation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section container" style="background:linear-gradient(180deg, rgba(40,198,245,0.06), rgba(29,60,112,0.02)); border-radius:14px; margin:24px auto; padding:28px">
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+    <div>
+      <strong style="font-size:18px">Ready to improve your HR operations?</strong>
+      <div style="color:var(--muted)">Schedule a 20-minute demo and see how we can help.</div>
+    </div>
+    <div>
+      <a href="contact.html" class="btn btn-primary">Schedule a demo</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer container">
+  <div class="footer-grid">
+    <div>
+      <strong>Mine HR Solutions Pvt. Ltd.</strong>
+      <div style="color:var(--muted)">Ahmedabad, India • <a href="mailto:info@corehrx.in">info@corehrx.in</a></div>
+    </div>
+
+    <div style="display:flex;gap:14px;align-items:center">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
